@@ -37,4 +37,3 @@ fi
 open_note $name
 
 
-
