@@ -67,11 +67,10 @@ utilities_dir=$(dirname $(readlink -f $0))
 bin_dir="${utilities_dir}/bin"
 
 get_info $1 $2
-utility_dir="${utilities_dir}/${category}/${script}"
-
+utility_dir="${utilities_dir}/${category}/${utility}"
 
 mkdir -p $utility_dir
-create_script $script $utility_dir $bin_dir
+create_script $utility $utility_dir $bin_dir
 create_readme $utility_dir 
 
 
